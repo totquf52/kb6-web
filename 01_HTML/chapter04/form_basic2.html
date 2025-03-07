@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <td><label for="username">이름</label></td>
+          <td><input type="text" id="username" name="username" /></td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <td>
+            <!-- label의 for 값을 input의 id값과 동일하게 설정하면 글자 클릭시에도 input이 클릭된다 -->
+            <input type="radio" name="gender" id="man" value="m" />
+            <label for="man">남자</label>
+            <input type="radio" name="gender" id="woman" value="w" />
+            <label for="woman">여자</label>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" value="가입" />
+    </form>
+  </body>
+</html>

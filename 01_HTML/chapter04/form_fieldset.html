@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>입력 양식</legend>
+        <table>
+          <tr>
+            <td><label for="name">이름</label></td>
+            <td>
+              <!-- placeholder : 입력값에 대한 힌트 -->
+              <!-- required : 필수값으로 해당 값이 비어있는 경우 제출이 안됨 -->
+              <input type="text" id="name" placeholder="이름 입력해" required />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mail">이메일</label></td>
+            <!-- disabled : 사용 불가능하도록 처리 -->
+            <td><input type="email" id="mail" disabled /></td>
+          </tr>
+        </table>
+        <input type="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

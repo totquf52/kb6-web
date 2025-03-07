@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- .list li.item -> 21점 -->
+    <!-- #submit span -> 101점 -->
+    <!-- header .menu li:nth-child(2) -> 22점 -->
+    <!-- !important > 인라인 스타일 > id > class > 태그 순으로 우선순위가 높다 -->
+    <style>
+      /* !important 붙으면 최고점수 */
+      div {
+        color: red !important;
+      }
+      /* 일반 태그 선택자 - 1점 */
+      div {
+        color: violet;
+      }
+      /* id 선택자 - 100점 */
+      #yellow {
+        color: yellow;
+      }
+      /* 클래스 선택자 - 10점 */
+      .green {
+        color: green;
+      }
+      /* 전체 선택자 - 0점 */
+      * {
+        color: blue;
+      }
+      body {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 인라인 스타일 - 1000점 -->
+    <div id="yellow" class="green" style="color: orange">안녕하세요</div>
+  </body>
+</html>

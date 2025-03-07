@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 700px;
+        height: 300px;
+        background-color: pink;
+        display: flex;
+        /* flex 요소를 여러줄에 표현 */
+        flex-wrap: wrap;
+        /* 수평 정렬 */
+        justify-content: center;
+        /* 수직 정렬 - 한줄인 경우*/
+        /* 여러 줄일때는 align-content */
+        align-items: center;
+      }
+      .container .item {
+        width: 150px;
+        height: 150px;
+        border: 2px dashed black;
+        background-color: green;
+        font-size: 50px;
+        /* 아이템의 증가비율, 기본값 0 */
+        /* flex-shrink: 아이템 감소비율, 기본값 1  */
+        flex-grow: 1;
+        /* 아이템의 공간 배분 전 기본 너비 */
+        flex-basis: 0;
+      }
+      .container .item:nth-child(2) {
+        /* 아이템의 순서, 기본값은 0, 숫자가 작을수록 먼저 */
+        order: 0;
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>

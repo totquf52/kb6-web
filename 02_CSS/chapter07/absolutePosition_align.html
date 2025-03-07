@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: red;
+      }
+      #container {
+        background-color: orange;
+        width: 500px;
+        height: 250px;
+        position: absolute;
+        /* 요소의 시작점을 가운데로 맞춰준다 */
+        /* left: 50%;
+        top: 50%; */
+        /* 가운데 정렬 맞추기 위해 요소의 절반 크기만큼 다시 당겨온다 */
+        /* margin-left: -250px;
+        margin-top: -125px; */
+        /* calc를 이용해서 바로 계산 가능 */
+        left: calc(50% - 250px);
+        top: calc(50% - 125px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>요소의 중앙 배치</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        margin: 5px;
+      }
+      .item:first-child {
+        /* border-box 처리를 해주면 padding과 border값을 포함해서 크기 계산 */
+        box-sizing: border-box;
+        border: 4px solid pink;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="item">아이템1</div>
+    <div class="item">아이템2</div>
+  </body>
+</html>
