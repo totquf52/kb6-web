@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let person = {
+        name: '윤인성',
+        eat: function (food) {
+          // this는 현재 인스턴스에 대한 참조다
+          alert(this.name + '이 ' + food + '을/를 먹습니다.');
+        },
+      };
+
+      person.eat('밥');
+    </script>
+  </head>
+  <body></body>
+</html>

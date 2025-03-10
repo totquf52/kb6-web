@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function callTenTimes(callback) {
+        for (let i = 0; i < 10; i++) {
+          // 매개변수로 받아온 함수 호출
+          callback();
+        }
+      }
+
+      let fun = function () {
+        alert('함수 호출');
+      };
+
+      // 콜백 함수 넘겨주는 부분
+      callTenTimes(fun);
+    </script>
+  </head>
+  <body></body>
+</html>
