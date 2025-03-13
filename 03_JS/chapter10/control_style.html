@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        let output = '';
+        for (let i = 0; i < 256; i++) {
+          output += '<div></div>';
+        }
+        // 요소 생성
+        document.body.innerHTML = output;
+
+        // div 태그 전부 선택
+        let divs = document.querySelectorAll('div');
+        for (let i = 0; i < divs.length; i++) {
+          let div = divs[i];
+          div.style.height = '2px';
+          div.style.background = `rgb(${i},${i},${i})`;
+        }
+      };
+    </script>
+  </head>
+  <body></body>
+</html>

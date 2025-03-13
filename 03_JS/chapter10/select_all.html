@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        // 해당하는 요소들 전부 NodeList로 반환
+        let headers = document.querySelectorAll('h1');
+
+        // NodeList로 반환되기 때문에 for문 사용해야함
+        for (let i = 0; i < headers.length; i++) {
+          let header = headers[i];
+          header.style.color = 'orange';
+          header.style.background = 'red';
+          header.innerHTML = 'From JavaScript';
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+  </body>
+</html>

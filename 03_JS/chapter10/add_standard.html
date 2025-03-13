@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      window.onload = function () {
+        let button = document.getElementById('button');
+
+        // 3. 표준 이벤트 모델 : addEventListener(이벤트명,실행할 함수)
+        button.addEventListener('click', () => {
+          alert('버튼 클릭!');
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <button id="button">버튼</button>
+  </body>
+</html>

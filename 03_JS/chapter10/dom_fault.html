@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // html 요소가 로드되기전이라서 null 에러가 난다
+      document.querySelector('h1').style.backgroundColor = 'red';
+      document.querySelector('h2').style.color = 'red';
+    </script>
+  </head>
+  <body>
+    <h1>Process - 1</h1>
+    <h2>Process - 2</h2>
+  </body>
+</html>
